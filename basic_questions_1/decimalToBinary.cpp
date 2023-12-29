@@ -21,7 +21,7 @@ int main()
     int i=0;
     while(!s.empty())
     {
-        str.push_back('a'+s.top());
+        str.push_back('0'+s.top());
         i++;
         s.pop();
     }
