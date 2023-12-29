@@ -1,12 +1,18 @@
-int a=0;
-    int b=1;
-    int n;
-    int nextNumber;
-    cin>>n;
-    for(int i=0;i<n-1;i++)
+if(n==1)
     {
-        nextNumber=a+b;
-        a=b;
-        b=nextNumber;
+        // a neither prime nor composite number
+        return false;
     }
-    cout<<nextNumber;
+    if(n==2)
+    {
+        return true;
+    }
+    // now coming upon to the cases further on
+    for(int i=2;i<n;i++)
+    {
+        if(i%n==0)
+        {
+            return false;
+        }
+    }
+    return true;
