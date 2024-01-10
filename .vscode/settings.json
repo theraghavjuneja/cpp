@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "set": "cpp"
+        "set": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp"
     }
 }
